@@ -51,7 +51,7 @@ class TodoApp extends React.Component {
     render() {
         return (
             <div >
-                <div className="Header-todo-list"> 
+                <div className="Header-todo-list todo-list"> 
                     <h1 className="todo-list__title">MY TODO LIST: {this.state.items.length}</h1>
 
                     <form onSubmit={this.handleSubmit}>
