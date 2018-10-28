@@ -86,11 +86,7 @@ ul li {
   padding: 12px 16px 12px 16px;
 }
 @media only screen and (min-width: 700px) {
-    .todo-list {
-      width:700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+
     .todo-list {
       width:700px;
       margin-left: auto;
