@@ -2,17 +2,20 @@ body {
   margin: 0;
   min-width: 250px;
   font-size: 16px;
+   font-family: 'Bree Serif', serif;
 }
 .line {
-  color: red;
+  color: #000000;
    text-decoration: line-through;
+   background-color:#E91E63;
 }
+
 * {box-sizing: border-box;}
 
 .Header-todo-list {
-  background-color: #5B72CC;
+  background-color: #8BC34A;
     padding: 30px 40px;
-    color: white;
+    color: #333333;
     text-align: center;
 }
 .Header-todo-list:after {
@@ -23,6 +26,7 @@ body {
 .todo-list__title {
   text-align: center;
   width: 100%;
+  font-weight: 400;
 }
 input[type="text"] {
      margin: 0;
@@ -34,20 +38,25 @@ input[type="text"] {
     font-size: 16px;
 }
 input[type="checkbox"] {
-   margin: 0;
-       width: 48px;
+
+    width: 48px;
     border: none;
     border-radius: 0;
-    padding: 10px;
     float: left;
     font-size: 16px;
+     height: 17px;
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    
 }
 
+
+
 .todo-list__button {
-padding: 10px;
+  padding: 10px;
   width: 20%;
-  background: #d9d9d9;
-  color: #555;
+  background: #333333;
+  color: #fff;
   float: left;
   text-align: center;
   font-size: 16px;
@@ -56,9 +65,7 @@ padding: 10px;
   border-radius: 0;
   border: none;
 }
-.todo-list__button {
-background-color: #bbb;
-}
+
 ul {
   margin: 0;
   padding: 0;
@@ -68,8 +75,9 @@ ul li {
   position: relative;
   padding: 12px 8px 12px 40px;
   list-style-type: none;
-  background: #eee;
-  font-size: 18px;
+  background: #333333;
+  color: #fff;
+  font-size: 16px;
   transition: 0.2s;
   
   /* make the list items unselectable */
