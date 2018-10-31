@@ -9,6 +9,41 @@ body {
    text-decoration: line-through;
    background-color:#E91E63;
 }
+.editInput {
+
+    /* margin: 0; */
+    border: none;
+    /* border-radius: 0; */
+    width: 75%;
+    /* padding: 10px; */
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #9374ca;
+    color: #ffff;
+}
+.buttonEdit {
+  display: none;
+}
+.save-Button {
+    padding: 10px;
+    width: 25%;
+    background: #333333;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+   
+}
+.save-Button .badge {
+  position: absolute;
+  top: -20px;
+  right: -30px;
+  padding: 5px 10px;
+  
+  background-color: #FFC107;
+  color: white;
+}
 
 * {box-sizing: border-box;}
 
@@ -28,7 +63,7 @@ body {
   width: 100%;
   font-weight: 400;
 }
-input[type="text"] {
+.todo-Input {
      margin: 0;
     border: none;
     border-radius: 0;
@@ -75,11 +110,11 @@ ul li {
   position: relative;
   padding: 12px 8px 12px 40px;
   list-style-type: none;
-  background: #333333;
+  background: #673AB7;
   color: #fff;
   font-size: 16px;
   transition: 0.2s;
-  
+  margin: 1px;
   /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -92,13 +127,72 @@ ul li {
   right: 0;
   top: 0;
   padding: 12px 16px 12px 16px;
+  color:#FFC107;
 }
-@media only screen and (min-width: 700px) {
+
+.editPen {
+  position: absolute;
+  right: 54px;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+      color: #FFC107;
+}
+@media  screen and (min-width: 700px) {
 
     .todo-list {
       width:700px;
       margin-left: auto;
       margin-right: auto;
     }
+}
+@media screen and (min-width: 300px){
+  body {
+    font-size: 14px;
+  }
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 4px 12px 10px;
+    list-style-type: none;
+    font-size: 16px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.todo-Input{
+    font-size: 13px;
+}
+.todo-list__button {
+    padding: 10px;
+    width: 20%;
+    background: #333333;
+    color: #fff;
+    float: left;
+    text-align: center;
+     font-size: 14px; 
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 0;
+    
+
+}
+.editPen {
+    position: absolute;
+    right: 34px;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+input[type="checkbox"] {
+    width: 18px;
+    height: 15px;
+    margin-right: 10px;
+
+}
 }
 

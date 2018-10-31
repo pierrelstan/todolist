@@ -13,7 +13,7 @@ class TodoApp extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.removeTodo = this.removeTodo.bind(this);
     }
-
+   
     handleChange(e){
         this.setState({
             text:e.target.value
@@ -55,7 +55,7 @@ class TodoApp extends React.Component {
                     <h1 className="todo-list__title">MY TODO LIST: {this.state.items.length}</h1>
 
                     <form onSubmit={this.handleSubmit}>
-                        <input id="new-todo"
+                        <input className="todo-Input"
                             value={this.state.text}
                             onChange={this.handleChange}
                             type="text"
